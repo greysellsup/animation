@@ -1,4 +1,5 @@
-/* .ball {
+/* Тестовое начало
+.ball {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -31,19 +32,25 @@ body {
 }
 .ball_color-red {
   background-color: rgb(255, 122, 122);
+  /* Безконечная анимация с остановками (1)
+  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite; */
 }
 
 .ball_color-yellow {
   background-color: rgb(255, 255, 191);
+  /* Безконечная анимация с остановками (1)
+  animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite; */
 }
 
+/* Анимация с ховерами (2)
 .ball_color-red:hover {
   animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5);
 }
 .ball_color-yellow:hover {
   animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5);
-}
+} */
 
+/* Кадры для задания (1) и (2)
 @keyframes jump {
   0% {
     -webkit-transform: translateY(0px);
@@ -61,4 +68,4 @@ body {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
-}
+} */
