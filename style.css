@@ -10,24 +10,32 @@
 body {
   margin: 0; /* Убираем отступы */
 }
+
+#animation {
+  background-image: url(img/walk.png);
+  background-repeat: no-repeat;
+  height: 318px;
+  width: 181.875px;
+}
+
 .ball {
   text-align: center;
   color: #5e444e;
   font-size: 20px;
   line-height: 130px;
   border: 3px dotted rgb(61, 55, 55);
-  position: fixed;
+  position: absolute;
   border-radius: 65%;
   width: 130px;
   height: 130px;
   bottom: 15px;
 }
 
-.ball_red-position {
+.ball_position-left {
   left: 15px;
 }
 
-.ball_yellow-position {
+.ball_position-right {
   left: 160px;
 }
 .ball_color-red {

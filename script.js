@@ -11,3 +11,14 @@ document.querySelectorAll("div[data-ball]").forEach((div) => {
     );
   });
 });
+
+onload = function startAnimation() {
+  var frameWidth = 181.875;
+  var frames = 8;
+  var frame = 0;
+  var div = document.getElementById("animation");
+  setInterval(function () {
+    var frameOffset = (++frame % frames) * -frameWidth;
+    div.style.backgroundPosition = frameOffset + "px " + "0px";
+  }, 100);
+};
