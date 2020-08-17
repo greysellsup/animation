@@ -1,0 +1,79 @@
+/* Тестовое начало
+.ball {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  cursor: pointer;
+  position: absolute;
+} */
+body {
+  margin: 0; /* Убираем отступы */
+}
+
+#animation {
+  background-image: url(img/walk.png);
+  background-repeat: no-repeat;
+  height: 318px;
+  width: 181.875px;
+}
+
+.ball {
+  text-align: center;
+  color: #5e444e;
+  font-size: 20px;
+  line-height: 130px;
+  border: 3px dotted rgb(61, 55, 55);
+  position: absolute;
+  border-radius: 65%;
+  width: 130px;
+  height: 130px;
+  bottom: 15px;
+}
+
+.ball_position-left {
+  left: 15px;
+}
+
+.ball_position-right {
+  left: 160px;
+}
+.ball_color-red {
+  background-color: rgb(255, 122, 122);
+  /* Безконечная анимация с остановками (1)
+  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite; */
+}
+
+.ball_color-yellow {
+  background-color: rgb(255, 255, 191);
+  /* Безконечная анимация с остановками (1)
+  animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5) infinite; */
+}
+
+/* Анимация с ховерами (2)
+.ball_color-red:hover {
+  animation: jump 3s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+}
+.ball_color-yellow:hover {
+  animation: jump 2s cubic-bezier(0.8, 0.8, 0.4, 0.5);
+} */
+
+/* Кадры для задания (1) и (2)
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-400px);
+    transform: translateY(-400px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+} */
